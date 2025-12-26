@@ -2,7 +2,7 @@
 # Final stage - ultra-minimal
 FROM ghcr.io/linuxserver/baseimage-selkies:ubuntunoble
 
-COPY /assets/wechat.deb /tmp/wechat.deb
+COPY wechat.deb /tmp/wechat.deb
 
 # Install ONLY essential runtime dependencies + WeChat in ONE layer (UNCHANGED)
 RUN apt-get update && \
@@ -45,4 +45,4 @@ ENV LC_ALL="zh_CN.UTF-8"
 ENV AUTO_START_WECHAT="true"
 
 # add local files
-COPY /assets/root /
+COPY /root /
