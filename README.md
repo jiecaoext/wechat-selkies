@@ -130,6 +130,7 @@ docker run -it -p 3001:3001 -v ./config:/config --device /dev/dri:/dev/dri nickr
 **Environment Secrets:**
 * DOCKERHUB_USERNAME: 你的 Docker Hub 用户名
 * DOCKERHUB_TOKEN: 你的 Docker Hub Access Token
+
 **Environment Variables:**
 * ENABLE_DOCKERHUB: 设置为 `true` 来启用 Docker Hub 推送
 
